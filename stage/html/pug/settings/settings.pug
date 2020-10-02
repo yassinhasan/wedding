@@ -1,0 +1,16 @@
+div.setting
+    .container
+        i.fas.fa-cog.fa-lg.active
+        i.fas.fa-times.fa-lg
+        div.color-option
+            h4 Template Color
+            ul.list-unstyled
+                each theme in themes
+                    li(data-color = theme)
+            button.res Reset
+        <hr>
+        div.navbar-option
+            h4 Navbar Background
+            button.whitebtn White
+            button.tempcolor Template Color
+            small.d-block Change the Navigation Background Color
