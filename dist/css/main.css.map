@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAAA,MACI,SAAU,CACV,8BAAY,CAAZ,sBAAuB","file":"main.css","sourcesContent":[".main{\r\n    color: red;\r\n    transition: all 2s ease;\r\n}\r\n"]}
