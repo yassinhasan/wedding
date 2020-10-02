@@ -4,7 +4,6 @@ var concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 var sass = require('gulp-sass');
 const GulpPug = require('gulp-pug');
-var livereload = require('gulp-livereload');
 var sourcemaps = require('gulp-sourcemaps');
 var notify = require("gulp-notify");
 const minify = require('gulp-minify');
@@ -15,7 +14,6 @@ gulp.task('html',function(){
      .pipe(GulpPug({pretty: true}))
      .pipe(sourcemaps.write('.'))
      .pipe(gulp.dest('dist'))
-     .pipe(livereload())
      
  });
 
@@ -27,7 +25,6 @@ gulp.task('css',function(){
      .pipe(concat('main.css'))
      .pipe(sourcemaps.write('.'))
      .pipe(gulp.dest('dist/css'))
-     .pipe(livereload())
      
  });
  gulp.task('js',function(){
@@ -35,10 +32,8 @@ gulp.task('css',function(){
      .pipe(concat('main.js'))
      .pipe(minify())
      .pipe(gulp.dest('dist/js'))
-     .pipe(livereload())
      
  });
  gulp.task('watch',function(){
-    livereload.listen();
     gulp.watch(['stage/html/**/*.pug','stage/css/**/*.css','stage/css/**/*.scss','stage/js/**/*.js'],gulp.series('html','css','js'))
 });
