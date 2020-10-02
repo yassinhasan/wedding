@@ -1,9 +1,14 @@
+include pug/variables/variables.pug
 <!DOCTYPE html>
 html(lang="en")
     head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel="stylesheet", href="/dist/css/main.css")
-        title Document
+        include pug/meta/meta.pug
+        include pug/links/links.pug
+        title #{pagetitile}
     body
-        div.main hello smsm
+        
+
+
+
+        include pug/scripts/script.pug
+html        
