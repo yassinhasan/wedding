@@ -4,7 +4,7 @@
     width: 278px;
     position: fixed;
     top: 324px;
-    left: 278px;
+    left: -278px;
     z-index: 20;  
     .fa-cog,
     .fa-times {
@@ -20,10 +20,9 @@
     text-align: center;
     display: none;
     right: -46px;
-    
-  &.active {
+    &.active {
     display: block;
-  }
+            }
   }
   .color-option{
     h4 
@@ -32,28 +31,23 @@
       color: #363636;
       text-align: left;
     }
-    ul li {
+    ul{
+      $colors: #f08080,#dc3545,#18a7b5,#97c92c,#d2b48c;
+      @for $i from 1 through length($colors){
+        li:nth-child(#{$i}){
+          background-color: nth($colors, $i);
+        }
+      }
+      li {
         width: 30px;
         height: 30px;
         display: inline-block;
         margin-right: 10px;
         cursor: pointer;
     }
-    ul li:nth-child(1) {
-    background-color: #f08080;
+
     }
-    ul li:nth-child(2) {
-    background-color: #dc3545;
-    }
-    li:nth-child(3) {
-    background-color: #18a7b5;
-    }
-    li:nth-child(4) {
-    background-color: #97c92c;
-    }
-    li:nth-child(5) {
-    background-color: #d2b48c;
-    }
+    
     .res {
     position: relative;
     padding: 10px;
