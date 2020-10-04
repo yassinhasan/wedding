@@ -1,0 +1,49 @@
+
+/*start date couples*/
+.our-date{
+    .container{
+        .date-info{
+            h2{
+                // opacity: 0; 
+                &.myanimation{
+                  animation-delay: 0.2s;
+                }
+      
+              }
+              p {
+                // opacity: 0;
+                padding-bottom: 50px;
+                &.myanimation {
+                  animation-delay: 0.5s;
+                }
+              }
+        }
+        ul {
+            padding-top: 20px;
+            li {
+                padding-right: 0px;
+                padding-left: 0px;
+                    h1 {
+                    font-family: "arial tahoma";
+                    padding-bottom: 10px;
+                     }
+                    h4 {
+                        opacity: 0.9;
+                        color: rgba(0, 0, 0, 0.8);
+                        font-size: 20px;
+                        font-family: "arial tahoma";
+                    } 
+                &:not(:last-of-type) {
+                    border-right: 1px solid rgba(0, 0, 0, 0.7);
+                }
+            }
+        }
+
+
+    }
+}
+
+
+
+
+/*ends date couples*/
