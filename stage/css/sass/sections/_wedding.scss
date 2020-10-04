@@ -6,6 +6,15 @@
     height: 100vh;
     animation: bgchange 16s 2.5s ease-in-out 1 forwards;
     will-change: auto;
+    .myoverlay {
+      background-color: #d4c1c166;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 1;
+  }
     .textinfo {
         z-index: 10;
         position: relative;
