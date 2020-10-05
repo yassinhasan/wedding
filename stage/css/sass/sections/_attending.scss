@@ -1,0 +1,64 @@
+/*start  attending*/
+.attending {
+    position: relative;
+    background-image: url("../images/attending.jpg");
+    background-position: center 65%;
+    height: 1000px;
+        .textinfo {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            span {
+                display: block;
+                top: 140px;
+                transform: translate(-50px, 10px);
+                    i {
+                        font-size: 30px;
+                        &:nth-child(1) {
+                            transform: translateX(10px);
+                            color: #fff;
+                        }
+                        &:nth-child(2) {
+                            color: var(--mymaincolor);
+                        }
+                    }
+            }
+            h2 {
+                padding-top: 20px;
+                margin-left: -40px;
+                color: #406ca2;
+                animation-delay: 0.5s;
+                // opacity: 0;
+                &.myanimation {
+                    animation-delay: 0.2s;
+                }
+            }
+            p {
+                color: #406ca2;
+                width: 50%;
+                margin-left: 25%;
+                animation-delay: 0.9s;
+                // opacity: 0;
+                .myanimation {
+                    animation-delay: 0.5s;
+                    color: black;
+                }
+            }
+        }
+        a {
+            left: 50%;
+            top: 80%;
+            padding: 20px 40px;
+            color: #fff;
+            &:hover {
+                background-color: var(--mymaincolor);
+                border: 1px solid var(--mymaincolor);
+                color: #fff;
+                z-index: 4;
+            }
+        }
+}
+
+
+  /*ends  attending*/

@@ -1,0 +1,23 @@
+@media (max-width: 991px) {
+    .timeline-right-left {
+      margin-bottom: 10px;
+    }
+    .timeline-groups:before {
+      display: none;
+    }
+    .timeline .odd,
+    .timeline .even {
+      display: flex;
+      flex: auto;
+    }
+    .timeline-content .date {
+      top: -50px;
+      flex: auto;
+    }
+    .timeline-content .timeline-text div h4 {
+      text-align: center !important;
+    }
+    .timeline-content .timeline-text div p {
+      text-align: center !important;
+    }
+  }
