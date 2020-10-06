@@ -1,109 +1,26 @@
-/*start couples pop-up*/
-
 .couples-popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #d4c1c166;
-    z-index: 1000;
-    overflow-y: scroll;
-    cursor: pointer;
-    display: none;
-    p {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 26px;
-      color: #fff;
-      
-    }
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  overflow-y: scroll;
+  cursor: pointer;
+  display: none;
 }
 
-.couples-popup-husband{
-      position: fixed;
-      top: 3%;
-      margin-bottom: 3%;
-      transform: translate(-50%, 0%);
-      left: 50%;
-      z-index: 1001;
-      min-width: 400px;;
-      z-index: 50000;
-      height: 100vh;
-      overflow-x: scroll;
-      scroll-behavior: smooth;
-      background-color: #fff;
-      display: none;
-        .husband{
-          height: 600px;
-          position: relative;
-          background-size: cover;
-          background-position: center center;
-          background-image: url("../images/5.jpg");
-          .husband-icon {
-            max-width: 400px;
-            left: 50%;
-            margin-left: -200px;
-            position: relative;
-            top: 75%;
-            z-index: 10;
-              span i{
-                font-size: 30px;
-                  &:nth-child(1){
-                    transform: translateX(10px);
-                    color: #fff;
-                  }
-                  &:nth-child(2) {
-                    color: var(--mymaincolor);
-                  }
-              }
-              h2{
-                margin-top: 40px;
-                color: #fff;
-                z-index: 5;
-                position: relative;
-                font-size: 29px;
-              }
-          }
-        }
-        .social {
-          background-color: #fff;
-          ul{
-            justify-content: center;
-            margin: 50px 0;
-            li{
-                i{
-                  font-size: 30px;
-                  margin: 5px;
-                  border-radius: 50%;
-                  cursor: pointer;
-                }
-                > a{
-                  color: #525e6b!important;
-                }
-                i.fa-facebook:hover{
-                  color: #406ca2;
-                }
-                i.fa-youtube:hover{
-                  color: #dc3545;
-                }
-                i.fa-twitter:hover{
-                  color: cadetblue;
-                }
-            }
-
-
-          }
-            
-          .husband-memory img
-          {
-            max-width: 100%;
-          }
-        }
+.couples-popup-overlay p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 26px;
+  color: #fff;
 }
-.couples-popup-wife{
+.couples-popup-husband,
+.couples-popup-wife {
   position: fixed;
   top: 3%;
   margin-bottom: 3%;
@@ -115,74 +32,84 @@
   height: 100vh;
   overflow-x: scroll;
   scroll-behavior: smooth;
+
   background-color: #fff;
+}
+.couples-popup-overlay,
+.couples-popup-husband,
+.couples-popup-wife {
   display: none;
-    .wife{
-      height: 600px;
-      position: relative;
-      background-size: cover;
-      background-position: center center;
-      background-image: url("../images/5.jpg");
-      .wife-icon {
-        max-width: 400px;
-        left: 50%;
-        margin-left: -200px;
-        position: relative;
-        top: 75%;
-        z-index: 10;
-          span i{
-            font-size: 30px;
-              &:nth-child(1){
-                transform: translateX(10px);
-                color: #fff;
-              }
-              &:nth-child(2) {
-                color: var(--mymaincolor);
-              }
-          }
-          h2{
-            margin-top: 40px;
-            color: #fff;
-            z-index: 5;
-            position: relative;
-            font-size: 29px;
-          }
-      }
-    }
-    .social {
-      background-color: #fff;
-        div.lists ul{
-          justify-content: center;
-          margin: 50px 0;
-            li{
-              i{
-                font-size: 30px;
-                margin: 5px;
-                border-radius: 50%;
-                cursor: pointer;
-              }
-              > a{
-                color: #525e6b!important;
-              }
-              i.fa-facebook:hover{
-                color: #406ca2;
-              }
-              i.fa-youtube:hover{
-                color: #dc3545;
-              }
-              i.fa-twitter:hover{
-                color: cadetblue;
-              }
-          }
-  
-  
-        }
-        
-      .wife-memory img
-      {
-        max-width: 100%;
-      }
-    }
 }
 
-  
+.couples-popup-husband .husband,
+.couples-popup-wife .wife {
+  height: 600px;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../images/5.jpg");
+}
+
+.husband .husband-icon,
+.wife .wife-icon {
+  max-width: 400px;
+  left: 50%;
+  margin-left: -200px;
+  position: relative;
+  top: 75%;
+  z-index: 10;
+}
+
+.husband .husband-icon span i,
+.wife .wife-icon span i {
+  font-size: 30px;
+}
+.husband .husband-icon span i:nth-child(1),
+.wife .wife-icon span i:nth-child(1) {
+  transform: translateX(10px);
+  color: #fff;
+}
+.husband .husband-icon i:nth-child(2),
+.wife .wife-icon span i:nth-child(2) {
+  color: var(--mymaincolor);
+}
+.husband .husband-icon h2,
+.wife .wife-icon h2 {
+  margin-top: 40px;
+  color: #fff;
+  z-index: 5;
+  position: relative;
+  font-size: 29px;
+}
+.social {
+  background-color: #fff;
+}
+.social ul{
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.social ul li i{
+  font-size: 30px;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+.social ul li > a{
+  color: #525e6b!important;
+}
+.social ul li i.fa-facebook:hover{
+  color: #406ca2;
+}
+.social ul li i.fa-youtube:hover{
+  color: #dc3545;
+}
+.social ul li i.fa-twitter:hover{
+  color: cadetblue;
+}
+
+.husband-memory img,
+.wife-memory img {
+  max-width: 100%;
+}

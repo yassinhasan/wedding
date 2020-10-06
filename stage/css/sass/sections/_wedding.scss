@@ -1,122 +1,119 @@
 /* start gallery */
 .wedding-gallery {
-    position: relative;
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-    animation: bgchange 16s 2.5s ease-in-out 1 forwards;
-    will-change: auto;
-    .myoverlay {
-      background-color: #d4c1c166;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      z-index: 1;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  /*  will-change: contents;*/
+  animation: bgchange 16s 2.5s ease-in-out 1 forwards;
+  will-change: auto;
+}
+@keyframes bgchange {
+  0% {
+    background-image: url("../images/4.jpg"), url("../images/4.jpg");
   }
-    .textinfo {
-        z-index: 10;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        span {
-            display: block;
-            top: 140px;
-            i{
-                font-size: 30px;
-            }
-            i:nth-child(1) {
-                transform: translateX(10px);
-                color: #fff;
-            }
-            i:nth-child(2) {
-                color: var(--mymaincolor);
-            }
-        }
-        h2{
-            color: #fff;
-            margin-top: 142px;
-            z-index: 5;
-            letter-spacing: 15px;
-            position: relative;
-            font-size: 45px;
-            top: 40px;
-            &.myanimation {
-                animation-delay: 0.4s;
-            }
-        }
-        h4 {
-            color: #fefefe;
-            letter-spacing: 5px;
-            position: relative;
-            padding-top: 20px;
-            top: 40px;
-            &.myanimation {
-                animation-delay: 0.9s;
-            }
-        }
-    }
-    .arrow {
-        font-size: 50px;
-        position: absolute;
-        bottom: 30px;
-        left: 50%;
-        color: #fff;
-        z-index: 2;
-        cursor: pointer;
-        animation-name: arrow;
-        animation-duration: 1.5s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-    }  
+  20% {
+    background-image: url("../images/4.jpg"), url("../images/5.jpg");
+  }
+  30% {
+    background-image: url("../images/5.jpg"), url("../images/5.jpg");
+    /*    background-position: center 70%;*/
+  }
+  40% {
+    background-image: url("../images/5.jpg"), url("../images/DSC_5730.jpg");
+    /*    background-position: center 70%;*/
+  }
+  60% {
+    background-image: url("../images/DSC_5730.jpg"),
+      url("../images/DSC_5730.jpg");
+    /*    background-position: center 70%;*/
+  }
+  80% {
+    background-image: url("../images/DSC_5730.jpg"), url("../images/4.jpg");
+    /*    background-position: center 70%;*/
+  }
+  100% {
+    background-image: url("../images/4.jpg"), url("../images/4.jpg");
+    /*    background-position: center 70%;*/
+  }
+}
+
+.wedding-gallery .textinfo {
+  z-index: 10;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wedding-gallery .textinfo span {
+  display: block;
+  top: 140px;
+}
+
+.wedding-gallery .textinfo span i {
+  font-size: 30px;
+}
+.wedding-gallery .textinfo span i:nth-child(1) {
+  transform: translateX(10px);
+  color: #fff;
+}
+.wedding-gallery .textinfo span i:nth-child(2) {
+  color: var(--mymaincolor);
+}
+.wedding-gallery .textinfo h2 {
+  color: #fff;
+  margin-top: 142px;
+  z-index: 5;
+  letter-spacing: 15px;
+  position: relative;
+  font-size: 45px;
+  top: 40px;
+}
+.wedding-gallery .textinfo h2.myanimation {
+  animation-delay: 0.4s;
+}
+
+.wedding-gallery .textinfo h4 {
+  color: #fefefe;
+  letter-spacing: 5px;
+  position: relative;
+  padding-top: 20px;
+  top: 40px;
+}
+.wedding-gallery .textinfo h4.myanimation {
+  animation-delay: 0.9s;
+}
+
+.wedding-gallery .arrow {
+  font-size: 50px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  color: #fff;
+  z-index: 2;
+  cursor: pointer;
+  animation-name: arrow;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes arrow {
-    0% {
-      bottom: 35px;
-    }
-    25% {
-      bottom: 25px;
-    }
-    50% {
-      bottom: 35px;
-    }
-    75% {
-      bottom: 25px;
-    }
-    100% {
-      bottom: 35px;
-    }
+  0% {
+    bottom: 35px;
+  }
+  25% {
+    bottom: 25px;
+  }
+  50% {
+    bottom: 35px;
+  }
+  75% {
+    bottom: 25px;
+  }
+  100% {
+    bottom: 35px;
+  }
 }
-@keyframes bgchange {
-    0% {
-      background-image: url("../images/4.jpg"), url("../images/4.jpg");
-    }
-    20% {
-      background-image: url("../images/4.jpg"), url("../images/5.jpg");
-    }
-    30% {
-      background-image: url("../images/5.jpg"), url("../images/5.jpg");
-      /*    background-position: center 70%;*/
-    }
-    40% {
-      background-image: url("../images/5.jpg"), url("../images/DSC_5730.jpg");
-      /*    background-position: center 70%;*/
-    }
-    60% {
-      background-image: url("../images/DSC_5730.jpg"),
-        url("../images/DSC_5730.jpg");
-      /*    background-position: center 70%;*/
-    }
-    80% {
-      background-image: url("../images/DSC_5730.jpg"), url("../images/4.jpg");
-      /*    background-position: center 70%;*/
-    }
-    100% {
-      background-image: url("../images/4.jpg"), url("../images/4.jpg");
-      /*    background-position: center 70%;*/
-    }
-}
-  /* end gallery  */
+/* end gallery  */

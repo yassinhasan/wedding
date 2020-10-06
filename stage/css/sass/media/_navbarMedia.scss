@@ -1,55 +1,59 @@
+/*start navbar media*/
+
 @media (max-width: 991px) {
-    .mynav{
-        .row .brand {
-            display: flex;
-            padding-left: 45px;
-            height: 60px;
-            align-items: center;
-            justify-content: flex-start;
-        }
-        .links {
-            display: none;
-            &.open{
-                position: absolute;
-                top: 60px;
-                right: 0;
-                margin: 0;
-                background-color: #fff;
-                width: 100%;
-                margin-left: 15px;
-                display: flex;
-                flex-direction: column;
-                height: 265px;
-                z-index: 10;
-                justify-content: flex-start;
-                align-items: flex-start;
-                    li {
-                    padding: 8px 0px;
-                    font-size: 18px;
-                        a {
-                        color: #212529;
-                        cursor: pointer;
-                            &:hover,
-                            &.active
-                             {
-                                    color: var(--mymaincolor);
-                            }
-                         }
-
-                    }
-            }
-        }
-        .toggle.open {
-            display: block;
-            position: absolute;
-            top: 0px;
-            right: 32px;
-        }
-
-    } 
-}
-
-
+    .mynav .toggle.open {
+      display: block;
+      position: absolute;
+      top: 0px;
+      right: 32px;
+    }
+    body {
+      overflow-x: hidden;
+    }
+    .mynav.white .toggle.open {
+      display: block;
+      position: absolute;
+      top: 0px;
+      right: 32px;
+    }
+    .brand {
+      display: flex;
+      padding-left: 45px;
+      height: 60px;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .links {
+      display: none;
+    }
   
+    .links.open {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      margin: 0;
+      background-color: #fff;
+      width: 100%;
+      margin-left: 15px;
+      display: flex;
+      flex-direction: column;
+      height: 265px;
+      z-index: 10;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    .links.open li {
+      padding: 8px 0px;
+      font-size: 18px;
+    }
+    .links.open li a {
+      color: #212529;
+      cursor: pointer;
+    }
   
+    .links.open li a:hover,
+    .links.open li a.active {
+      color: var(--mymaincolor);
+    }
+  }
   

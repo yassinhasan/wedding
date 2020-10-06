@@ -1,0 +1,33 @@
+/*start loading popup*/
+
+.loading-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    background-color: #f3f3f3;
+  }
+  .inner-popuo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .loading-popup .inner-popuo i {
+    font-size: 30px;
+    animation: rotate 5s ease-in-out infinite both;
+    color: var(--mymaincolor);
+    transform: rotateY(360deg);
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotateY(-360deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  /*end loading popup*/

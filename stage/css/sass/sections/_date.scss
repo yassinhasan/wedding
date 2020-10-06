@@ -4,14 +4,14 @@
     .container{
         .date-info{
             h2{
-                // opacity: 0; 
+                opacity: 0; 
                 &.myanimation{
                   animation-delay: 0.2s;
                 }
       
               }
               p {
-                // opacity: 0;
+                opacity: 0;
                 padding-bottom: 50px;
                 &.myanimation {
                   animation-delay: 0.5s;

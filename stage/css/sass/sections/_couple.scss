@@ -3,12 +3,14 @@
     .container{
         h2 {
             line-height: 60px;
+            opacity: 0;
             &.myanimation {
                 animation-delay: 0.2s;
             }
         }   
         p {
             margin-bottom: 50px;
+            opacity: 0;
             &.myanimation {
                 animation-delay: 0.5s;
             }

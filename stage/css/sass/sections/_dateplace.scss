@@ -2,13 +2,13 @@
 .place-date{
     .container{
         h2{
-            // opacity: 0;
+            opacity: 0;
         &.myanimation {
             animation-delay: 0.2s;
         }    
         }
         p{
-            // opacity: 0;
+            opacity: 0;
                 padding-top: 20px;
         &.myanimation {
                 animation-delay: 0.5s;

@@ -1,0 +1,51 @@
+/*start more info*/
+.more-info{
+    .container{
+        >h2 {
+            margin-bottom: 20px;
+            opacity: 0;
+            &.myanimation {
+                animation-delay: 0.2s;
+            }
+          }
+        > p {
+            padding-bottom: 50px;
+            opacity: 0;
+            &.myanimation {
+                animation-delay: 0.5s;
+            }           
+        }
+        .info-content{
+            div{
+                i {
+                    margin-right: 25px;
+                    color: rgba(0, 0, 0, 0.8);
+                  }
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    color: rgba(0, 0, 0, 0.8);
+                    font-size: 25px;
+                    vertical-align: top;
+                    &:hover {
+                        color: var(--mymaincolor);
+                    }
+                }
+                p {
+                    margin-top: 15px;
+                    color: #888;
+                    text-align: left;
+                  }  
+            }
+
+        }  
+
+    }
+}
+
+
+
+
+
+
+  /*ends more info*/

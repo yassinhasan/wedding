@@ -5,14 +5,14 @@
             .our-story p {
               padding: 5px 40px;
                 h2{
-                  opacity: 1;
+                  opacity: 0;
                   &.myanimation {
                     animation-delay: 0.1s;
                   }
                   
                 }
                 p{
-                    opacity: 1;
+                    opacity: 0;
                     &.myanimation {
                         animation-delay: 0.3s;
                     }

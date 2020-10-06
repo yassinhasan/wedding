@@ -1,0 +1,22 @@
+/*start scroll to top*/
+.scroll {
+    color: var(--mymaincolor);
+    position: fixed;
+    top: 80%;
+    right: 14px;
+    font-size: 39px;
+    z-index: 100;
+    cursor: pointer;
+    animation: scroll 1s ease-in-out infinite;
+    display: none;
+  }
+  @keyframes scroll {
+    0%,
+    100% {
+      top: 81%;
+    }
+    50% {
+      top: 82%;
+    }
+  }
+  /*end scroll to top*/

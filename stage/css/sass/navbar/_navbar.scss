@@ -1,108 +1,102 @@
-/*start navbar*/
-.mynav{
+.mynav.hide {
     background-color: var(--mymaincolor);
     position: -webkit-sticky;
     position: sticky;
-    &.hide {
-        top: 0;
-        z-index: 209;
-        opacity: 0.9;
-        display: none;
-        transition-property: all;
-        transition-duration: 1s;
-        transition-delay: 1s;
-    }
-    &.show {
-        background-color: var(--mymaincolor);
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        z-index: 209;
-        opacity: 0.9;
-        display: block;
-    }
-        .row{
-            .brand {
-                display: flex;
-                height: 60px;
-                align-items: center;
-                justify-content: center;
-                    h4 {
-                        cursor: pointer;
-                        color: #fafafa;
-                        font-weight: bold;
-                    }
-            }
-            
-        }
-        .links {
-            justify-content: flex-end;
-            width: 80%;
-            height: 60px;
-            margin: 0px;
-            display: flex;
-            align-items: center;
-                a {
-                    text-decoration: none;
-                    padding: 0 20px;
-                    font-size: 18px;
-                    color: #f3f3f3;
-                    cursor: pointer;
-                    &:hover,
-                    &.active {
-                        color: #212529;
-                    }
-                }
-        }
-        .toggle {
-            margin-top: 15px;
-            width: 30px;
-            background-color: var(--mymaincolor);
-            position: relative;
-            display: none;
-            cursor: pointer;
-                div {
-                position: relative;
-                height: 4px;
-                width: 100%;
-                background-color: #fff;
-                margin-top: 5px;
-                }
-        }
-    &.white {
-        background-color: #fff;
-        position: -webkit-sticky;
-        position: sticky;
-        .brand h4 {
-            color: #212529;
-            h4 span {
-                color: var(--mymaincolor);
-            }
-        }
-        .links li a {
-            text-decoration: none;
-            color: #212529;
-            &:hover {
-                color: var(--mymaincolor);
-            }
-        }
-        .toggle {
-            margin-top: 15px;
-            width: 30px;
-            background-color: var(--mymaincolor);
-            position: relative;
-            display: none;
-            cursor: pointer;
-            &.toggle div {
-                position: relative;
-                height: 7px;
-                width: 100%;
-                background-color: #fff;
-                margin-top: 3px;
-                cursor: pointer;
-            }
-        }
-
-    }    
-
-}
+    top: 0;
+    z-index: 209;
+    opacity: 0.9;
+    display: none;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 1s;
+  }
+  .mynav.show {
+    background-color: var(--mymaincolor);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 209;
+    opacity: 0.9;
+    display: block;
+  }
+  
+  .brand {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+  }
+  .mynav .brand h4 {
+    cursor: pointer;
+    color: #fafafa;
+    font-weight: bold;
+  }
+  .links {
+    justify-content: flex-end;
+    width: 80%;
+    height: 60px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+  }
+  .links li a {
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #f3f3f3;
+    cursor: pointer;
+  }
+  .links li a:hover,
+  .links li a.active {
+    color: #212529;
+  }
+  .toggle {
+    margin-top: 15px;
+    width: 30px;
+    background-color: var(--mymaincolor);
+    position: relative;
+    display: none;
+    cursor: pointer;
+  }
+  .toggle div {
+    position: relative;
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 5px;
+  }
+  /*start white themes*/
+  .mynav.white {
+    background-color: #fff;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  .mynav.white .brand h4 {
+    color: #212529;
+  }
+  .mynav.white .brand h4 span {
+    color: var(--mymaincolor);
+  }
+  .mynav.white .links li a {
+    text-decoration: none;
+    color: #212529;
+  }
+  .mynav.white .links li a:hover {
+    color: var(--mymaincolor);
+  }
+  .mynav.white .toggle {
+    margin-top: 15px;
+    width: 30px;
+    background-color: var(--mymaincolor);
+    position: relative;
+    display: none;
+    cursor: pointer;
+  }
+  .mynav.white .toggle div {
+    position: relative;
+    height: 7px;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 3px;
+    cursor: pointer;
+  }
