@@ -266,7 +266,7 @@ $(function () {
 
   
   //images pop up
-  $(".timeline-content .search,.gallery-box .row div .search").click(function () {
+  $(".timeline-content .search,.gallery-box .row div .search").click(function () { 
     $(".popup-overlay").removeClass("hidden").addClass("show");
     $(".image-popup").removeClass("hidden").addClass("show");
     $("body").css("overflow-y", "hidden");
